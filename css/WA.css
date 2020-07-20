@@ -68,10 +68,12 @@ a:focus {
 /* color, image, repeat, attachment position*/
 /* HEADER */
 #title_pg {
-    background-color: whitesmoke;
+    background-color: white;
+    background-image: url(../images/graphics/wa\ title\ pg.png);
     background-size: cover;
     object-position: center;
     object-fit: cover;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -85,7 +87,7 @@ a:focus {
 
 /* flex: grow | shrink | basis */
 
-#left {
+#left_txt {
     float: left;
     width: auto;
     height: auto;
@@ -93,7 +95,7 @@ a:focus {
     margin-left: 6%;
     padding: 0;
 }
-#right {
+#right_txt {
     float: right;
     margin-top: 24%;
     margin-left: 5%;
@@ -165,6 +167,7 @@ a:focus {
 display: flex;
 flex: wrap;
 padding: 0;
+overflow: hidden;
 }
 .column {
     float: left;
