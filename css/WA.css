@@ -32,6 +32,7 @@ header {
     text-align: center;
     margin: 0;
     padding: 2%;
+    z-index: 999;
 }
 li {
     display: inline;
@@ -149,44 +150,47 @@ a:hover, a:active a:focus {
 }
 
 /* for photo grids*/
-.box {
+
+/*
+.grid {
     position: relative;
     display: inline-block;
 }
 
-.box #intro {
+.grid #intro {
     position: absolute;
+    z-index: 998;
     text-align: center;
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 40%;
+    top: 30%;
 }
+*/
 
+
+
+/* subtopic photo grids*/
+/* make look prettier afterwards*/
 .row {
 display: flex;
-flex: wrap;
+flex-wrap: wrap;
 padding: 0;
 overflow: hidden;
 }
 .column {
-    float: left;
     flex: 50%;
+    max-width: 50%;
     padding: 0;
 }
 .column img {
     margin-top: 0;
-    object-fit: cover;
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
+    vertical-align: middle;
+    width: 100%;
 }
 
 
-/* materials specifications */
-
+/* subtopic text specifications */
 .mat_txt {
     font-family: Futura;
     font-size: 800%;
@@ -194,17 +198,10 @@ overflow: hidden;
     background: transparent;
     text-align: right;
     margin: 0;
-    padding: 7% 3% 0% 0%;
+    padding: 7% 4% 0% 0%;
 }
 
-.material {
-    background-image: url(../images/wooden\ kettle.jpg) none;
-}
 
-#wd {
-background: transparent, url(../images/wooden\ kettle.jpg) no-repeat scroll center;
-background-size: fill;
-}
 
 /*
 TO DO
