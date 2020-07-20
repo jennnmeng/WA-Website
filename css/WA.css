@@ -51,35 +51,33 @@ a {
 1. link/visited
 2. hover
 3. active
+4. focus
 */
+
 a:link, a:visited {
     color: darkred;
 }
-a:hover {
-    color: transparent;
-}
-a:active {
-    color: transparent;
-}
-a:focus {
+a:hover, a:active a:focus {
     color: transparent;
 }
 
 /* color, image, repeat, attachment position*/
 /* HEADER */
+#title_dispay {
+    display: flex;
+}
+
 #title_pg {
+    flex: auto;
     background-color: white;
-    background-image: url(../images/graphics/wa\ title\ pg.png);
+    background-image: url(../images/graphics/wa\ title\ pg\ 2.png);
     background-size: cover;
-    object-position: center;
-    object-fit: cover;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
 #title_container {
-    display: flex;
     flex: wrap;
     margin: 0;
     padding: 0;
@@ -88,6 +86,7 @@ a:focus {
 /* flex: grow | shrink | basis */
 
 #left_txt {
+    flex: auto;
     float: left;
     width: auto;
     height: auto;
@@ -96,9 +95,10 @@ a:focus {
     padding: 0;
 }
 #right_txt {
+    flex: auto;
     float: right;
     margin-top: 24%;
-    margin-left: 5%;
+    margin-right: 45%;
     height: auto;
 }
 
@@ -205,3 +205,12 @@ overflow: hidden;
 background: transparent, url(../images/wooden\ kettle.jpg) no-repeat scroll center;
 background-size: fill;
 }
+
+/*
+TO DO
+- add photo galleries for each subtopic material
+- flex elements to ensure they wrap when screen changes (includes, images, etc.
+- add navigation panel to side of screen (fixed) (dots) to move from one sub topic to the other
+- js animations (add map to interact with the different objects, etc.)
+- find information on the book to add to the website
+*/
