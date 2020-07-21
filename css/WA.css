@@ -103,7 +103,6 @@ a:hover, a:active a:focus {
     height: auto;
 }
 
-
 #title_txt {
     color: black;
     font-size: 3000%;
@@ -123,10 +122,7 @@ a:hover, a:active a:focus {
 }
 
 
-
-
-
-
+/* make this portion more aesthetically pleasing */
 #authors_container {
     background: transparent;
     margin: 0;
@@ -149,15 +145,11 @@ a:hover, a:active a:focus {
     padding: 0;
 }
 
-/* for photo grids*/
-
-/*
-.grid {
+.intro_box {
     position: relative;
     display: inline-block;
 }
-
-.grid #intro {
+.intro_box #intro {
     position: absolute;
     z-index: 998;
     text-align: center;
@@ -166,12 +158,23 @@ a:hover, a:active a:focus {
     right: 0;
     top: 30%;
 }
-*/
 
 
+/* SUBTOPICS*/
+
+/* subtopic text specifications */
+.mat_txt {
+    font-family: Futura;
+    font-size: 800%;
+    color: black;
+    background: transparent;
+    text-align: right;
+    margin: 0;
+    padding: 7% 4% 0% 0%;
+}
 
 /* subtopic photo grids*/
-/* make look prettier afterwards*/
+/* reformat the photos later */
 .row {
 display: flex;
 flex-wrap: wrap;
@@ -190,16 +193,6 @@ overflow: hidden;
 }
 
 
-/* subtopic text specifications */
-.mat_txt {
-    font-family: Futura;
-    font-size: 800%;
-    color: black;
-    background: transparent;
-    text-align: right;
-    margin: 0;
-    padding: 7% 4% 0% 0%;
-}
 
 
 
