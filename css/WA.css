@@ -18,17 +18,17 @@ header {
     background: transparent;
 }
 
-/*navigation menu*/
+/* NAVIGATION MENU
+
 #nav {
     display: flex;
     justify-content: space-evenly;
-    /* flexboxes are amazing, hallelu for flex boxes*/
     list-style-type: none;
     align-items: stretch;
     width: auto;
     position: fixed;
-    top: 0; /* nav bar @ top of pg */
-    width: 100%; /* full width*/
+    top: 0; 
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 2%;
@@ -37,7 +37,6 @@ header {
 li {
     display: inline;
 }
-
 a {
     display: inline-block;
     font-family: Futura;
@@ -48,13 +47,6 @@ a {
     margin: 0;
     z-index: 999;
 }
-/*
-1. link/visited
-2. hover
-3. active
-4. focus
-*/
-
 a:link, a:visited {
     color: darkred;
 }
@@ -62,14 +54,27 @@ a:hover, a:active a:focus {
     color: transparent;
 }
 
-/* color, image, repeat, attachment position*/
+*/
+
+
+/* FOR BUTTONS
+1. link/visited
+2. hover
+3. active
+4. focus
+*/
+
+/* FOR BACKGROUND
+color, image, repeat, attachment position
+*/
+
+
+
 /* HEADER */
-#title_dispay {
-    display: flex;
-}
+
+/* FOR FLEX: grow | shrink | basis */
 
 #title_pg {
-    flex: auto;
     background-color: white;
     background-image: url(../images/graphics/wa\ title\ pg\ 2.png);
     background-size: cover;
@@ -77,32 +82,6 @@ a:hover, a:active a:focus {
     margin: 0;
     padding: 0;
 }
-
-#title_container {
-    flex: wrap;
-    margin: 0;
-    padding: 0;
-}
-
-/* flex: grow | shrink | basis */
-
-#left_txt {
-    flex: auto;
-    float: left;
-    width: auto;
-    height: auto;
-    margin-top: 5%;
-    margin-left: 6%;
-    padding: 0;
-}
-#right_txt {
-    flex: auto;
-    float: right;
-    margin-top: 24%;
-    margin-right: 45%;
-    height: auto;
-}
-
 #title_txt {
     color: black;
     font-size: 3000%;
@@ -110,15 +89,22 @@ a:hover, a:active a:focus {
     font-style: normal;
     background-color: transparent;
     text-align: left;
+    padding: 0;
+    margin-top: 20%;
+    margin-left: 6%;
+    float: left;
 }
 #subtitle_txt {
     color:darkred;
     font-family: Futura;
-    font-size: 400%;
-    width: 50px;
-    height: 50px;
-    padding:0;
-    text-align: justify;
+    font-size: 420%;
+    width: 70px;
+    height: 100px;
+    text-align: left;
+    float: right;
+    padding: 0;
+    margin-top: 24%;
+    margin-right: 45%;
 }
 
 
@@ -163,14 +149,20 @@ a:hover, a:active a:focus {
 /* SUBTOPICS*/
 
 /* subtopic text specifications */
-.mat_txt {
+
+.nav_txt {
     font-family: Futura;
-    font-size: 800%;
+    font-size: 50%;
     color: black;
     background: transparent;
-    text-align: right;
-    margin: 0;
-    padding: 7% 4% 0% 0%;
+    padding: 0;
+}
+.mat_txt {
+    font-family: Futura;
+    font-size: 300%;
+    color: black;
+    background: transparent;
+    padding: 0;
 }
 
 /* subtopic photo grids*/
