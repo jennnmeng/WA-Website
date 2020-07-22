@@ -18,44 +18,6 @@ header {
     background: transparent;
 }
 
-/* NAVIGATION MENU
-
-#nav {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    align-items: stretch;
-    width: auto;
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 2%;
-    z-index: 999;
-}
-li {
-    display: inline;
-}
-a {
-    display: inline-block;
-    font-family: Futura;
-    font-size: 24px;
-    text-decoration: none;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    z-index: 999;
-}
-a:link, a:visited {
-    color: darkred;
-}
-a:hover, a:active a:focus {
-    color: transparent;
-}
-
-*/
-
 
 /* FOR BUTTONS
 1. link/visited
@@ -75,8 +37,7 @@ color, image, repeat, attachment position
 /* FOR FLEX: grow | shrink | basis */
 
 #title_pg {
-    background-color: white;
-    background-image: url(../images/graphics/wa\ title\ pg\ 2.png);
+    background: transparent url(../images/graphics/wa\ title\ pg\ 2.png) no-repeat center;
     background-size: cover;
     overflow: hidden;
     margin: 0;
@@ -106,6 +67,96 @@ color, image, repeat, attachment position
     margin-top: 24%;
     margin-right: 45%;
 }
+
+
+/* NAVIGATION PAGE */
+/*general information on nav page*/
+a {
+    font-family: Futura;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+a:link a:visited {
+    color: black;
+}
+a:hover, a:active a:focus {
+    color: transparent;
+}
+
+.nav_extra {
+    font-size: 12px;
+}
+#nav_mat {
+    font-size: 40px;
+    color: black;
+    background: transparent;
+    line-height: 50px;
+}
+
+
+
+/* PLACEMENT OF MENU ITEMS*/
+
+
+
+#wd {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* SUBTOPICS*/
+
+/* subtopic text specifications */
+
+
+.mat_txt {
+    font-family: Futura;
+    font-size: 300%;
+    color: black;
+    background: transparent;
+    padding: 0;
+}
+
+
+
+
+
+
+/* subtopic photo grids*/
+/* reformat the photos later */
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+overflow: hidden;
+}
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0;
+}
+.column img {
+    margin-top: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+
+
+/*
+TO DO
+- add photo galleries for each subtopic material
+- flex elements to ensure they wrap when screen changes (includes, images, etc.
+- add navigation panel to side of screen (fixed) (dots) to move from one sub topic to the other
+- js animations (add map to interact with the different objects, etc.)
+- find information on the book to add to the website
+*/
 
 
 /* make this portion more aesthetically pleasing */
@@ -144,55 +195,3 @@ color, image, repeat, attachment position
     right: 0;
     top: 30%;
 }
-
-
-/* SUBTOPICS*/
-
-/* subtopic text specifications */
-
-.nav_txt {
-    font-family: Futura;
-    font-size: 50%;
-    color: black;
-    background: transparent;
-    padding: 0;
-}
-.mat_txt {
-    font-family: Futura;
-    font-size: 300%;
-    color: black;
-    background: transparent;
-    padding: 0;
-}
-
-/* subtopic photo grids*/
-/* reformat the photos later */
-.row {
-display: flex;
-flex-wrap: wrap;
-padding: 0;
-overflow: hidden;
-}
-.column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0;
-}
-.column img {
-    margin-top: 0;
-    vertical-align: middle;
-    width: 100%;
-}
-
-
-
-
-
-/*
-TO DO
-- add photo galleries for each subtopic material
-- flex elements to ensure they wrap when screen changes (includes, images, etc.
-- add navigation panel to side of screen (fixed) (dots) to move from one sub topic to the other
-- js animations (add map to interact with the different objects, etc.)
-- find information on the book to add to the website
-*/
