@@ -40,6 +40,8 @@ color, image, repeat, attachment position
     background: transparent url(../images/graphics/wa\ title\ pg\ 2.png) no-repeat center;
     background-size: cover;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -48,12 +50,12 @@ color, image, repeat, attachment position
     font-size: 3000%;
     font-family: Futura;
     font-style: normal;
-    background-color: transparent;
     text-align: left;
+    background-color: transparent;
+    float: left;
     padding: 0;
     margin-top: 20%;
     margin-left: 6%;
-    float: left;
 }
 #subtitle_txt {
     color:darkred;
@@ -85,38 +87,60 @@ a:hover, a:active a:focus {
     color: darkred;
 }
 
-
+/* fonts */
 .nav_extra {
     font-size: 14px;
+    margin: 0;
 }
 .nav_mat {
     font-size: 40px;
-    color: black;
     background: transparent;
     line-height: 50px;
     padding: 0;
 }
 
+/*formatting:columns*/
+.nav_pg {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
 .nav_column {
-    float: left;
     max-width: 50%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
 }
 
-/* PLACEMENT OF MENU ITEMS*/
-#foreword1 #foreword2 {
-    margin: 10%;
-}
-
-#purchase {
-    object-position: bottom right;
+/*formatting: different menu items*/
+#foreword1, #foreword2 {
+    margin-left: 20%;
+    margin-bottom: 10%;
 }
 
 #wd {
-    margin-left: 5%;
+    margin-left: 50%;
+    margin-bottom: 40%;
 }
 #mtl {
-    object-position: center left;
+    margin-left: 100%;
+    margin-bottom: 40%;
+}
+#cgs {
+    margin-left: 75%;
+    margin-bottom: 40%;
+}
+
+
+#purchase {
+    margin-right: 40%;
 }
 
 
