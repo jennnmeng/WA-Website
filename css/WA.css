@@ -74,6 +74,7 @@ color, image, repeat, attachment position
 a {
     font-family: Futura;
     text-decoration: none;
+    text-align: center;
     color: black;
     padding: 0;
 }
@@ -81,29 +82,43 @@ a:link a:visited {
     color: black;
 }
 a:hover, a:active a:focus {
-    color: transparent;
+    color: darkred;
 }
 
+
 .nav_extra {
-    font-size: 12px;
+    font-size: 14px;
 }
-#nav_mat {
+.nav_mat {
     font-size: 40px;
     color: black;
     background: transparent;
     line-height: 50px;
-}
-
-
-
-/* PLACEMENT OF MENU ITEMS*/
-
-
-
-#wd {
-    margin: 0;
     padding: 0;
 }
+
+.nav_column {
+    float: left;
+    max-width: 50%;
+    padding: 0%;
+}
+
+/* PLACEMENT OF MENU ITEMS*/
+#foreword1 #foreword2 {
+    margin: 10%;
+}
+
+#purchase {
+    object-position: bottom right;
+}
+
+#wd {
+    margin-left: 5%;
+}
+#mtl {
+    object-position: center left;
+}
+
 
 
 
