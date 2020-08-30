@@ -1,0 +1,65 @@
+
+/* SUBTOPICS*/
+
+/* subtopic text specifications */
+
+/*ASIDE: RED BANNER*/
+
+aside, section {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    float: left;
+    background-color: darkred;
+    width: 30%;
+    position: fixed;
+}
+
+section {
+    float: right;
+    width: 70%;
+    background-color: transparent;
+}
+
+
+/*TEXT*/
+.material_txt {
+    color: white;
+}
+.bttn {
+    color: white;
+}
+p {
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 16px;
+    padding: 0;
+}
+
+
+/*PHOTO GRID*/
+.photo_grid {
+    display: grid;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+overflow: hidden;
+}
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0;
+}
+.column, img {
+    margin-top: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+

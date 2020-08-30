@@ -1,15 +1,15 @@
-/* when opening browser
+$(document).ready(function () {
+
+    var sectionSelected; // register section chosen by user
+
+    /* when opening browser
 FADE IN: WA and subtitle (one after another)
 FADE IN: Blobs: section by section
 */
-$("title_txt").css("display", "none");
-$("subtitle_txt").css("display", "none")
-$("title_txt").fadeIn(3000);
-$("subtitle_txt").fadeIn(3000);
-
-var sectionSelected; // register section chosen by user
-
-$(document).ready(function () {
+    $("title_txt").css("display", "none");
+    $("subtitle_txt").css("display", "none")
+    $("title_txt").fadeIn(3000);
+    $("subtitle_txt").fadeIn(3000);
 
     // fade in sections based on user selection
     /* 1. user presses a section title
@@ -19,7 +19,7 @@ $(document).ready(function () {
     b. load section on click
      */
 
-    $("h2").click(function() {
+    $("h2").click(function () {
         sectionSelected = $("h2").attr("id");
     });
 

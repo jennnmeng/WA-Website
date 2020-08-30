@@ -1,0 +1,50 @@
+/*UNIVERSAL*/
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(../fonts/Futura/Futura\ Book\ font.ttf);
+}
+@font-face {
+    font-family: futura light;
+    src: url(../fonts/Futura/futura\ light\ bt.ttf);
+}
+
+header {
+    background: transparent;
+}
+
+/*FONTS*/
+.material_txt {
+    font-family: futura;
+    font-size: 50px;
+    background: transparent;
+    line-height: 60px;
+    letter-spacing: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+/*BUTTONS*/
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 0;
+}
+a:link a:visited {
+    color: black;
+}
+a:hover, a:active a:focus {
+    color: darkred;
+}
+.bttn {
+    font-family: futura light;
+    font-size: 14px;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
