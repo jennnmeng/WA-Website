@@ -14,13 +14,15 @@ aside, section {
 aside {
     float: left;
     background-color: darkred;
-    width: 30%;
+    width: 25%;
     position: fixed;
 }
 
 section {
+    display: grid;
+    place-items: center;
     float: right;
-    width: 70%;
+    width: 75%;
     background-color: transparent;
 }
 
@@ -28,22 +30,31 @@ section {
 /*TEXT*/
 .material_txt {
     color: white;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 .bttn {
-    color: white;
+    float: left;
+    margin-top: 120px;
+    margin-left: 50px;
 }
-p {
-    display: flex;
-    flex-direction: row;
-    
-    font-size: 16px;
+#paragraph {
+    background: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: justify;
+    width: 700px;
     padding: 0;
+    margin: 0;
 }
 
 
 /*PHOTO GRID*/
 .photo_grid {
-    display: grid;
+    display: flex;
+    width: 700px;
+    margin: 50px;
 }
 .row {
 display: flex;
@@ -60,6 +71,20 @@ overflow: hidden;
     margin-top: 0;
     vertical-align: middle;
     width: 100%;
+}
+
+/*OTHER PHOTOS*/
+.photo {
+    width: 700px;
+    margin: 50px;
+}
+
+
+header, footer {
+    float: right;
+    height: 120px;
+    width: 75%;
+    background-color: white;
 }
 
 
