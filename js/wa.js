@@ -6,10 +6,20 @@ $(document).ready(function () {
 FADE IN: WA and subtitle (one after another)
 FADE IN: Blobs: section by section
 */
+
+
+/*
     $("title_txt").css("display", "none");
     $("subtitle_txt").css("display", "none")
     $("title_txt").fadeIn(3000);
     $("subtitle_txt").fadeIn(3000);
+
+*/
+
+
+    $('body').hide().fadeIn(4000);
+
+
 
     // fade in sections based on user selection
     /* 1. user presses a section title

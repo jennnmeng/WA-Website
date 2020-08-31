@@ -48,3 +48,11 @@ a:hover, a:active a:focus {
     margin: 0;
 }
 
+/*HEADER AND FOOTER*/
+header, footer {
+    float: right;
+    height: 120px;
+    width: 75%;
+    background-color: white;
+}
+

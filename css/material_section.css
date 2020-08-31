@@ -12,18 +12,23 @@ aside, section {
 }
 
 aside {
-    float: left;
+    display: inline-block;
     background-color: darkred;
     width: 25%;
     position: fixed;
 }
 
 section {
-    display: grid;
-    place-items: center;
+    display: inline-block;
     float: right;
+}
+
+.section {
+    display: inline-grid;
     width: 75%;
+    place-items: center;
     background-color: transparent;
+
 }
 
 
@@ -77,14 +82,6 @@ overflow: hidden;
 .photo {
     width: 700px;
     margin: 50px;
-}
-
-
-header, footer {
-    float: right;
-    height: 120px;
-    width: 75%;
-    background-color: white;
 }
 
 
