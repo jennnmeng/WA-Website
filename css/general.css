@@ -43,16 +43,6 @@ a:hover, a:active a:focus {
 .bttn {
     font-family: futura light;
     font-size: 14px;
-    float: right;
     padding: 0;
     margin: 0;
 }
-
-/*HEADER AND FOOTER*/
-header, footer {
-    float: right;
-    height: 120px;
-    width: 75%;
-    background-color: white;
-}
-

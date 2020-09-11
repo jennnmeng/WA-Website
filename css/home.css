@@ -21,7 +21,6 @@ color, image, repeat, attachment position
     overflow: hidden;
     width: 100%;
     height: 100%;
-    aspect-ratio: 16 / 9;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +48,6 @@ color, image, repeat, attachment position
     margin-top: 24%;
     margin-right: 45%;
 }
-
 
 
 

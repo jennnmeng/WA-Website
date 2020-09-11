@@ -3,45 +3,41 @@
 
 /* subtopic text specifications */
 
+
+/* split page into 2 sections*/
+/*have content in floating in the middle of the 75% taken up by the section*/
+
 /*ASIDE: RED BANNER*/
 
-aside, section {
+#banner, #content {
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
-aside {
-    display: inline-block;
-    background-color: darkred;
+#banner {
+float: left;
     width: 25%;
-    position: fixed;
+    background-color: darkred;
+    position: fixed;   
 }
 
-section {
-    display: inline-block;
+#content {
     float: right;
-}
-
-.section {
-    display: inline-grid;
     width: 75%;
+    display: grid;
     place-items: center;
     background-color: transparent;
-
+    margin-top: 115px;
+    margin-bottom: 115px ;
 }
+
 
 
 /*TEXT*/
 .material_txt {
     color: white;
-    float: left;
     margin-top: 100px;
-    margin-left: 50px;
-}
-.bttn {
-    float: left;
-    margin-top: 120px;
     margin-left: 50px;
 }
 #paragraph {
@@ -54,6 +50,8 @@ section {
     margin: 0;
 }
 
+/*fix button issues*/
+
 
 /*PHOTO GRID*/
 .photo_grid {
@@ -62,10 +60,10 @@ section {
     margin: 50px;
 }
 .row {
-display: flex;
-flex-wrap: wrap;
-padding: 0;
-overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    overflow: hidden;
 }
 .column {
     flex: 50%;

@@ -56,50 +56,42 @@
 /* LEFT */
 #foreword1 {
     grid-column: 3 / 13;
+    margin-top: 50px;
 }
 #foreword2 {
     grid-column: 6 / 13;
+    margin-top: 25px;
 }
 
 #wbl {
     grid-column: 3 / 13;
+    margin-top: 50px;
 }
 #mtl {
     grid-column: 10 / 13;
+    margin-top: 60px;
 }
 #cgs {
     grid-column: 6 / 13;
+    margin-top: 100px;
 }
 
 
 #ppr {
     grid-column: 3 / 11;
+    margin-top: 150px;
 }
 #ff {
     grid-column: 9 / 11;
+    margin-top: 100px;
 }
 #new {
     grid-column: 6 / 11;
+    margin-top: 100px;
 
 }
 
 #purchase {
-    grid-column: 6 / 11;
-}
-
-
-
-
-
-/* SUBTOPICS*/
-
-/* subtopic text specifications */
-
-
-.mat_txt {
-    font-family: Futura;
-    font-size: 300%;
-    color: black;
-    background: transparent;
-    padding: 0;
+    grid-column: 10 / 11;
+    margin-top: 125px;
 }
