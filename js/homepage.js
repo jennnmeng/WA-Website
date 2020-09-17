@@ -40,6 +40,12 @@ hometl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
         "-=1"
     )
+    .fromTo(
+        enter,
+        1.5,
+        { opacity: '0%' },
+        { opacity: '100%', ease: Power2.easeInOut },
+    )
 
 
 
