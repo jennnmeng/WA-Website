@@ -12,7 +12,7 @@ a. replace section title with section selected
 b. load section on click
  */
 
-
+// INDEX
 const blobs = document.querySelector("#blobs");
 const title = document.querySelector("#title_txt");
 const subtitle = document.querySelector("#subtitle_txt");
@@ -47,6 +47,9 @@ hometl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
     )
 
+
+
+// NAVIGATION
 const foreword1 = document.querySelector("#foreword1");
 const foreword2 = document.querySelector("#foreword2");
 const wbl = document.querySelector("#wbl");
@@ -61,11 +64,18 @@ const purchase = document.querySelector("#purchase");
 const navtl = new TimelineMax();
 
 navtl.fromTo(
-    foreword1, foreword2,
+    foreword1,
     1.5,
     { opacity: '0%' },
     { opacity: '100%', ease: Power2.easeInOut }
 )
+    .fromTo(
+        foreword2,
+        1.5,
+        { opacity: '0%' },
+        { opacity: '100%', ease: Power2.easeInOut },
+        "-=1.5"
+    )
     .fromTo(
         purchase,
         1.5,
@@ -75,45 +85,45 @@ navtl.fromTo(
     )
     .fromTo(
         wbl,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "+=1"
+        "+=0.5"
     )
     .fromTo(
         mtl,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "-=0.5"
+        "-=0.1"
     )
     .fromTo(
         cgs,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "-=0.5"
+        "-=0.1"
     )
     .fromTo(
         ppr,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "-=0.5"
+        "-=0.1"
     )
     .fromTo(
         ff,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "-=0.5"
+        "-=0.1"
     )
     .fromTo(
         newmat,
-        1,
+        0.5,
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
-        "-=0.5"
+        "-=0.1"
     )
 
 
