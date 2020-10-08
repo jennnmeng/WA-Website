@@ -1,17 +1,3 @@
-/* when opening browser
-FADE IN: WA and subtitle (one after another)
-FADE IN: Blobs: section by section
-*/
-
-
-// fade in sections based on user selection
-/* 1. user presses a section title
-2. register section
-3. if section pressed was (this):
-a. replace section title with section selected
-b. load section on click
- */
-
 // INDEX
 const blobs = document.querySelector("#blobs");
 const title = document.querySelector("#title_txt");
@@ -47,6 +33,10 @@ hometl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
     )
 
+// on clicking enter
+$('enter_bttn').on('click', entertl);
+
+const entertl = new TimelineMax();
 
 
 // NAVIGATION
