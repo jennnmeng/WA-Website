@@ -6,6 +6,7 @@
     background: transparent;
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
 
@@ -15,21 +16,15 @@
 /* !!! PUSHDOWN
 - can't use float -- goes with "flow of the page, gets pushed down the page
 - use in line block?*/
-/*
+
 #red_rect_left, #red_rect_right {
     height: 45vw;
     width: 1.5vw;
     background-color: darkred;
     padding: 0;
     margin-top: 2vw;
+    z-index: 999
 }
-#red_rect_left {
-    float: left;
-}
-#red_rect_right {
-    float: right;
-}
-*/
 
 
 /* fonts */
@@ -49,7 +44,7 @@
 #left_column, #right_column {
     justify-content: space-around;
     max-height: 100%;
-    max-width: 50%;
+    max-width: 45%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -57,24 +52,24 @@
 /*formatting: different menu items*/
 /* LEFT */
 #foreword1 {
-    grid-column: 3 / 13;
+    grid-column: 4 / 11;
     margin-top: 50px;
 }
 #foreword2 {
-    grid-column: 6 / 13;
+    grid-column: 7 / 11;
     margin-top: 25px;
 }
 
 #wbl {
-    grid-column: 3 / 13;
+    grid-column: 4 / 11;
     margin-top: 50px;
 }
 #mtl {
-    grid-column: 10 / 13;
+    grid-column: 10 / 11;
     margin-top: 60px;
 }
 #cgs {
-    grid-column: 6 / 13;
+    grid-column: 7 / 11;
     margin-top: 100px;
 }
 

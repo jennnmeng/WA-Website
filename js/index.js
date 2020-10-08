@@ -33,12 +33,6 @@ hometl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
     )
 
-// on clicking enter
-$('enter_bttn').on('click', entertl);
-
-const entertl = new TimelineMax();
-
-
 // NAVIGATION
 const foreword1 = document.querySelector("#foreword1");
 const foreword2 = document.querySelector("#foreword2");
@@ -115,15 +109,3 @@ navtl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )
-
-
-
-
-
-
-
-
-
-
-
-
