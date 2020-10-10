@@ -11,6 +11,7 @@
 
 /* red ractangle embellishments */
 #red_rect_left, #red_rect_right {
+    display: inline-block;
     position: relative;
     height: 45vw;
     width: 1.5vw;
@@ -18,13 +19,7 @@
     padding: 0;
     margin-top: 2vw;
 }
-
-#red_rect_left {
-    z-index: 100;
-}
-
 #red_rect_right {
-    z-index: 999;
     float: right;
 }
 

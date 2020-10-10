@@ -13,6 +13,10 @@ color, image, repeat, attachment position
 
 /* FOR FLEX: grow | shrink | basis */
 
+body {
+    overflow: hidden;
+}
+
 #title_pg {
     width: 100%;
     height: 100vh;
