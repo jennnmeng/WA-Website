@@ -5,25 +5,27 @@
     height: 100%;
     background: transparent;
     padding: 0;
-    margin: 0;
-    display: inline-block;
+    margin: 0;    
+    position: absolute;
 }
 
-
-
-
-/*red embellishments*/
-/* !!! PUSHDOWN
-- can't use float -- goes with "flow of the page, gets pushed down the page
-- use in line block?*/
-
+/* red ractangle embellishments */
 #red_rect_left, #red_rect_right {
+    position: relative;
     height: 45vw;
     width: 1.5vw;
     background-color: darkred;
     padding: 0;
     margin-top: 2vw;
-    z-index: 999
+}
+
+#red_rect_left {
+    z-index: 100;
+}
+
+#red_rect_right {
+    z-index: 999;
+    float: right;
 }
 
 
@@ -34,10 +36,7 @@
     padding: 0;
 }
 
-
 /*formatting:columns*/
-
-
 #left_column {
     float: left;
 }
@@ -72,7 +71,6 @@
     grid-column: 7 / 11;
     margin-top: 100px;
 }
-
 
 #ppr {
     grid-column: 3 / 11;
