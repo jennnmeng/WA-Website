@@ -3,6 +3,9 @@ const title = document.querySelector("#title_txt");
 const subtitle = document.querySelector("#subtitle_txt");
 const enter = document.querySelector("#enter_bttn");
 
+const redSlider = document.querySelector("red_slider");
+
+// animate title, subtitle and blobs on load
 const hometl = new TimelineMax();
 
 hometl.fromTo(
@@ -31,3 +34,6 @@ hometl.fromTo(
         { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
     )
+
+    // open red rectangle on hover
+    

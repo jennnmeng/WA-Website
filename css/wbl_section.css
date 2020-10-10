@@ -7,18 +7,17 @@
 /* split page into 2 sections*/
 /*have content in floating in the middle of the 75% taken up by the section*/
 
-/*ASIDE: RED BANNER*/
+.container {
+    position: absolute;
+}
 
 #banner, #content {
     height: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 #banner {
-float: left;
+    float: left;
     width: 25%;
-    background-color: darkred;
     position: fixed;   
 }
 
@@ -33,12 +32,20 @@ float: left;
 }
 
 
-
 /*TEXT*/
 .material_txt {
-    color: white;
-    margin-top: 100px;
-    margin-left: 50px;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: 1.5vw;
+    color: darkred;
+    margin-top: 5.5vw;
+    margin-left: 9.9vw;
+}
+#back_bttn {
+    font-size: 25px;
+    letter-spacing: 0.3vw;
+    margin-top: 10vw;
+    margin-left: 10.1vw;
 }
 #paragraph {
     background: none;
@@ -46,11 +53,7 @@ float: left;
     font-size: 14px;
     text-align: justify;
     width: 700px;
-    padding: 0;
-    margin: 0;
 }
-
-/*fix button issues*/
 
 
 /*PHOTO GRID*/
@@ -62,13 +65,11 @@ float: left;
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     overflow: hidden;
 }
 .column {
     flex: 50%;
     max-width: 50%;
-    padding: 0;
 }
 .column, img {
     margin-top: 0;
@@ -82,4 +83,21 @@ float: left;
     margin: 50px;
 }
 
+#rect_position {
+    position: fixed;
+}
+#red_rect_left, #red_rect_right {
+    display: inline-block;
+    position: relative;
+    object-position: fixed;
+    height: 45vw;
+    width: 1.5vw;
+    background-color: darkred;
+    opacity: 0.9;
+    margin-top: 2vw;
+    z-index: 200;
+}
 
+#red_rect_right {
+    float: right;
+}
