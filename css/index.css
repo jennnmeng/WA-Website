@@ -17,22 +17,17 @@ color, image, repeat, attachment position
 #title_pg {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     position: absolute;
 }
 
 #blobs {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 115%;
+    opacity: 0.9;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
     position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 9vw;
     z-index: -999;
 }
 
@@ -44,7 +39,6 @@ color, image, repeat, attachment position
     text-align: left;
     background-color: transparent;
     float: left;
-    padding: 0;
     margin-top: 20%;
     margin-left: 6%;
 }
@@ -57,7 +51,6 @@ color, image, repeat, attachment position
     height: 100px;
     text-align: left;
     float: right;
-    padding: 0;
     margin-top: 24%;
     margin-right: 45%;
 }
@@ -70,9 +63,9 @@ color, image, repeat, attachment position
 #red_slider {
     height: 45vw;
     width: 100%;
-    padding: 0;
     margin-top: 2vw;
-    position: relative;
+    display: flex;
+    position: absolute;
     z-index: 100;
     background-color: darkred;
     opacity: 0.9;
