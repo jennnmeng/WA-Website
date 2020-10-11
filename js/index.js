@@ -35,47 +35,44 @@ hometl.fromTo(
 
 // open red rectangle on hover
 
+
 function pageTransition() {
     var tl = gsap.timeline();
-    tl.fromTo("#redSlider", {
+    tl.fromTo("#red_slider", {
         duration: 2,
-        scaleX: 1,
+        width: "100%",
+        left: "0%",
         ease: "Expo.easeInOut;"
-    })
-    tl.to("#redSlider", {
+    });
+
+    tl.to("#red_slider", {
         duration: 2,
-        scaleX: 0,
-        ease: "Expo.easeInOut;"
-    })
+        width: "100%",
+        left: "100%",
+        ease: "Expo.easeInOut;",
+        delay: 0.3
+    });
+
+    tl.set("#red_slider", { left: "0%" })
 }
 
-function pageAnimation() {
-    var tl = gsap.timeline();
-
-}
 
 
-barba.init({
-    sync: true,
-
-    transitions: [{
-
-        async leave(data) {
-            const done = this.async();
-            pageTransition();
-            await delay(1500);
-            done();
-        },
-
-        async enter(data) {
-            pageAnimation();
-        }
-
-        async once(data) {
-            pageAnimation();
-        }
-
-    }]
+$(function() {
+    barba.init({
+        sync: true,
     
-}
-)
+        transitions: [{
+    
+            async leave(data) {
+                const done = this.async();
+                pageTransition();
+                await delay(1500);
+                done();
+            }
+        }]
+        
+    })
+})
+
+
