@@ -1,3 +1,4 @@
+
 // NAVIGATION
 const foreword1 = document.querySelector("#foreword1");
 const foreword2 = document.querySelector("#foreword2");

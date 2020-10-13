@@ -33,8 +33,6 @@ hometl.fromTo(
         { opacity: '100%', ease: Power2.easeInOut },
     )
 
-// open red rectangle on hover
-
 
 function pageTransition() {
     var tl = gsap.timeline();
@@ -57,22 +55,23 @@ function pageTransition() {
 }
 
 
-
-$(function() {
-    barba.init({
-        sync: true,
-    
-        transitions: [{
-    
-            async leave(data) {
-                const done = this.async();
-                pageTransition();
-                await delay(1500);
-                done();
-            }
-        }]
+function sliderEnter() {
+    var tl = gsap.timeline();
+    tl.fromTo("red_slider", {
         
     })
+}
+
+barba.init({
+    transitions: [{
+        async leave(data) {
+            await sliderEnter();
+        },
+        enter(data) {
+            sliderExit();
+        }
+    }]
+
 })
 
 
