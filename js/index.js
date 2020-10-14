@@ -142,9 +142,6 @@ function sliderAnimation() {
             {
                 width: "100%",
                 left: "0%",
-                ease: Power2.easeInOut,
-            },
-            {
                 width: "100%",
                 left: "100%",
                 ease: Power2.easeInOut,

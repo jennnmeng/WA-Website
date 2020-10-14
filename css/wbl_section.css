@@ -1,13 +1,15 @@
 
 /* SUBTOPICS*/
 
-/* subtopic text specifications */
+.page {
+    display: flex;
+    justify-content: space-between;
+}
 
-
-/* split page into 2 sections*/
-/*have content in floating in the middle of the 75% taken up by the section*/
 
 .container {
+    width: 95%;
+    height: 100%;
     position: absolute;
 }
 
@@ -41,11 +43,13 @@
     margin-top: 5.5vw;
     margin-left: 9.9vw;
 }
-#back_bttn {
+#back-bttn {
+    position: relative;
     font-size: 25px;
     letter-spacing: 0.3vw;
     margin-top: 10vw;
     margin-left: 10.1vw;
+    z-index: 999;
 }
 #paragraph {
     background: none;
@@ -83,13 +87,9 @@
     margin: 50px;
 }
 
-#rect_position {
-    position: fixed;
-}
-#red_rect_left, #red_rect_right {
+#red-rect-left, #red-rect-right {
     display: inline-block;
-    position: relative;
-    object-position: fixed;
+    position: fixed;
     height: 45vw;
     width: 1.5vw;
     background-color: darkred;
@@ -98,6 +98,3 @@
     z-index: 200;
 }
 
-#red_rect_right {
-    float: right;
-}

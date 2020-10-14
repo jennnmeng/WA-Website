@@ -1,3 +1,13 @@
+function delay(n) {
+    n = n || 2000;
+    return new Promise((done => {
+        setTimeout(() => {
+            done();
+        }, n);
+    }))
+}
+
+
 function homeAnimation() {
     var tl = gsap.timeline();
     tl
@@ -158,5 +168,27 @@ function sliderAnimation() {
 
 
 homeAnimation();
+
 navAnimation();
 
+barba.init({
+    sync: true,
+
+    transitions: [
+        {
+            async leave(data) {
+                const done = this.async();
+
+                sliderAnimation();
+                await delay(1000);
+                done();
+            },
+            async enter(data) {
+                navAnimation();
+            },
+            async once(data) {
+                navAnimation();
+            },
+        },
+    ]
+});
