@@ -13,65 +13,57 @@ const purchase = document.querySelector("#purchase");
 
 const navtl = new TimelineMax();
 
-navtl.fromTo(
-    foreword1,
-    1.5,
-    { opacity: '0%' },
-    { opacity: '100%', ease: Power2.easeInOut }
-)
-    .fromTo(
+navtl
+    .to(
+        foreword1,
+        1.5,
+        { opacity: '100%', ease: Power2.easeInOut }
+    )
+    .to(
         foreword2,
         1.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=1.5"
     )
-    .fromTo(
+    .to(
         purchase,
         1.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=1"
     )
-    .fromTo(
+    .to(
         wbl,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "+=0.5"
     )
-    .fromTo(
+    .to(
         mtl,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )
     .fromTo(
         cgs,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )
-    .fromTo(
+    .to(
         ppr,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )
-    .fromTo(
+    .to(
         ff,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )
-    .fromTo(
+    .to(
         newmat,
         0.5,
-        { opacity: '0%' },
         { opacity: '100%', ease: Power2.easeInOut },
         "-=0.1"
     )

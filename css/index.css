@@ -14,7 +14,7 @@ color, image, repeat, attachment position
 /* FOR FLEX: grow | shrink | basis */
 
 
-#title_pg {
+#title-pg {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -29,9 +29,10 @@ color, image, repeat, attachment position
     margin-top: 1.5vw;
     margin-left: 9vw;
     z-index: -999;
+    opacity: 0%;
 }
 
-#title_txt {
+#title-txt {
     color: black;
     font-size: 3000%;
     font-family: futura;
@@ -41,9 +42,10 @@ color, image, repeat, attachment position
     float: left;
     margin-top: 20%;
     margin-left: 6%;
+    opacity: 0%;
 }
 
-#subtitle_txt {
+#subtitle-txt {
     color:darkred;
     font-family: futura;
     font-size: 420%;
@@ -53,20 +55,11 @@ color, image, repeat, attachment position
     float: right;
     margin-top: 24%;
     margin-right: 45%;
+    opacity: 0%;
 }
 
-#enter_bttn {
+#enter-bttn {
     margin-top: 810px;
     margin-left: 1500px;
-}
-
-#red_slider {
-    height: 45vw;
-    width: 100%;
-    margin-top: 2vw;
-    display: flex;
-    position: absolute;
-    z-index: 100;
-    background-color: darkred;
-    opacity: 0.9;
+    opacity: 0%;
 }
